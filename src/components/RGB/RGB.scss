@@ -1,0 +1,21 @@
+.RGB {
+    display: flex;
+    flex-direction: row;
+
+    > div {
+        width: 72px;
+        height: 72px;
+    }
+
+    .R {
+        background-color: #ff0000;
+    }
+
+    .G {
+        background-color: #00ff00;
+    }
+
+    .B {
+        background-color: #0000ff;
+    }
+}

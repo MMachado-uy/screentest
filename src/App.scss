@@ -1,0 +1,38 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+  font-size: calc(10px + 2vmin);
+  min-width: 100%;
+  min-height: 100%;
+  color: lightgrey;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .top-right {
+    position: absolute;
+    top: 16px;
+    right: 32px;
+  }
+  
+  .top-left {
+    position: absolute;
+    top: 16px;
+    left: 32px;
+  }
+
+  .bottom {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-evenly;
+  }
+}
