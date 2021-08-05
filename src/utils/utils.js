@@ -1,4 +1,4 @@
-function debounce(fn, ms) {
+function debounce (fn, ms) {
     let timer
     return _ => {
         clearTimeout(timer)
@@ -9,6 +9,12 @@ function debounce(fn, ms) {
     };
 }
 
+const getScreenDimensions = () => ({
+    width: window.screen.width * window.devicePixelRatio,
+    height: window.screen.height * window.devicePixelRatio
+})
+
 export {
-    debounce
+    debounce,
+    getScreenDimensions
 }

@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import Fps from './components/FPS';
 import Dimensions from './components/Dimensions';
 
-import { debounce } from './utils/utils';
+import { debounce, getScreenDimensions } from './utils/utils';
 
 import './App.scss';
 import Cube from './components/Cube';
@@ -12,17 +12,11 @@ import RGB from './components/RGB';
 import Gradients from './components/Gradients/Gradients';
 
 function App() {
-    const [dimensions, setDimensions] = useState({
-        height: window.innerHeight,
-        width: window.innerWidth
-    })
+    const [dimensions, setDimensions] = useState(getScreenDimensions())
 
     useEffect(() => {
         const debouncedHandleResize = debounce(() => {
-            setDimensions({
-                height: window.innerHeight,
-                width: window.innerWidth
-            })
+            setDimensions(getScreenDimensions)
         }, 100)
 
         window.addEventListener('resize', debouncedHandleResize)
