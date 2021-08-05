@@ -2,6 +2,7 @@
   "name": "screentest",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://mmachado-uy.github.io/screentest/",
   "dependencies": {
     "chart.js": "^3.5.0",
     "node-sass": "^6.0.1",
